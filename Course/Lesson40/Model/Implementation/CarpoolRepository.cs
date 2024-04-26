@@ -14,7 +14,7 @@ public class CarpoolRepository : ICarpoolRepository
 
     public void AddUser(User user)
     {
-        if (user.Name.Length < 250)
+        if (user.Name.Length < 255)
         {
             user.ID = _carpoolContext.Users.Count() + 1;
             _carpoolContext.Users.Add(user);

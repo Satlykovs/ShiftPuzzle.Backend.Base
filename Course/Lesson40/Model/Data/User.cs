@@ -5,7 +5,7 @@ public class User
 
     public int ID { get; set; }
     [Required]
-    [StringLength(maximumLength: 250)]
+    [StringLength(maximumLength: 255)]
     public string Name { get; set; }
     public DateTime Date { get; set; }
     public double Reward { get; set; }
